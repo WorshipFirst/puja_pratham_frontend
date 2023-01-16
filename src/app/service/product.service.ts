@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  viewAll = 'https://puja-pratham-backend.herokuapp.com/product/view';
-  view= 'https://puja-pratham-backend.herokuapp.com/product/view-categoryid';
-  viewMore = 'https://puja-pratham-backend.herokuapp.com/product/view-productid'
+  viewAll = 'https://puja-pratham-backend.onrender.com/product/view';
+  view= 'https://puja-pratham-backend.onrender.com/product/view-categoryid';
+  viewMore = 'https://puja-pratham-backend.onrender.com/product/view-productid'
 
   constructor(private http: HttpClient) { }
 
@@ -24,7 +24,7 @@ export class ProductService {
     return this.http.post(this.viewMore, {_id:id});
   }
   public searchResult(search:any){
-    let api = "https://puja-pratham-backend.herokuapp.com/product/search";
+    let api = "https://puja-pratham-backend.onrender.com/product/search";
     return this.http.post<any>(api,{keywords:search});
   }
 }
