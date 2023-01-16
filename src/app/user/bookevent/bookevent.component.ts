@@ -62,8 +62,8 @@ export class BookeventComponent implements OnInit {
           "order_id": data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
           // "callback_url": "https://worship-first-by-tech-priest.herokuapp.com/order/order-status",
           "prefill": {
-            "name": "Faizan Lala",
-            "email": "faizan@gmail.com",
+            "name": "Mahak Agrawal",
+            "email": "mahak@gmail.com",
             "contact": this.contact
           },
           handler: (response: {
